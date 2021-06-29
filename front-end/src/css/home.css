@@ -1,0 +1,136 @@
+@font-face {
+  font-family: OldEnglish;
+  src: url("./OldEnglish.ttf");
+}
+* {
+  font-family: Montserrat;
+  color: white;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  background-color: #4751ac;
+}
+/* Navbar container */
+.navbar {
+  text-align: center;
+  padding: 0 1% 1% 1%;
+  line-height: 0.5vh;
+  margin: 0;
+  font-weight: 500;
+  width: 95%;
+}
+#navbar-items {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+  margin: 0 0 0 25%;
+}
+#navbar-items div {
+  font-weight: 600;
+  color: white;
+}
+.container {
+  margin: 2% 0 0 0;
+  display: flex;
+  height: 90vh;
+  width: 95%;
+}
+#item1 {
+  font-size: 20px;
+  margin: 2% 0 0 0;
+  height: 90vh;
+  width: 60vw;
+}
+#item2 {
+  font-size: 20px;
+  height: 90vh;
+  width: 40vw;
+  margin-top: 1%;
+}
+#item2 > h1 {
+  margin: 2% 0 0 0;
+  font-weight: 600;
+  text-align: center;
+}
+#item2 > p {
+  text-align: center;
+  font-weight: 600;
+}
+#item1 img {
+  width: 40vw;
+  height: 75vh;
+  margin: 0 0 0 15%;
+  border-radius: 8px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.carousel {
+  text-align: center;
+  font-weight: 600;
+  width: 80%;
+  height: 50%;
+  margin: 10% 0 0 10%;
+}
+#root {
+  height: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+#title {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5%;
+}
+#header {
+  font-size: 5vh;
+}
+#header img {
+  height: 5vh;
+  width: 3vw;
+  margin: 1% 0 0 20%;
+}
+#header p {
+  display: inline;
+  font-weight: 500;
+  font-family: OldEnglish;
+}
+#header span {
+  float: left;
+  font-size: 2.5vh;
+  margin: 2% 0 0 5%;
+  font-weight: 600;
+}
+#footer {
+  text-align: center;
+  height: 10vh;
+  color: white;
+  background-color: #263238;
+}
+#footer p {
+  padding-top: 1%;
+}
