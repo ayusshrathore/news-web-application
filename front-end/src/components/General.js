@@ -25,47 +25,40 @@ const General = () => {
             </div>
         );
     });
-    const article = news[0];
-    console.log(article);
+    const main = news.filter((article, index) => {
+        return index === 0;
+    });
+    const renderMain = main.map((article, index) => {
+        return (
+            <div id="smaincard" key={index}>
+                <img src={article.image} alt="close" />
+                <p>
+                    {article.title}
+                    <br />
+                </p>
+                <a href={article.url}>Read More</a>
+            </div>
+        );
+    });
+    const headlines = news.filter((article, index) => {
+        return index <= 3;
+    });
+    const renderHeadlines = headlines.map((article, index) => {
+        return (
+            <div id="sheadlines-news" key={index}>
+                <p> {article.title}</p>
+            </div>
+        );
+    });
     return (
         <>
             <h1 id="sh1">General</h1>
             <br />
             <div id="scontainer">
-                <div id="smaincard">
-                    {/* <img src={article.image} alt="close" />
-                    <p>
-                        {article.title}
-                        <br />
-                    </p>
-                    <a href={news.url}>Read More</a> */}
-                </div>
+                {renderMain}
                 <div id="sheadlines">
                     <h2 id="sh2">Headlines</h2>
-                    <div id="sheadlines-news">
-                        <p>
-                            What is Lorem Ipsum?Where does it come from?
-                            <br />
-                            Lorem Ipsum is simply dummy text of the typesetting
-                            industry.
-                        </p>
-                    </div>
-                    <div id="sheadlines-news">
-                        <p>
-                            What is Lorem Ipsum?Where does it come from?
-                            <br />
-                            Lorem Ipsum is simply dummy text of the typesetting
-                            industry.
-                        </p>
-                    </div>
-                    <div id="sheadlines-news">
-                        <p>
-                            What is Lorem Ipsum?Where does it come from?
-                            <br />
-                            Lorem Ipsum is simply dummy text of the typesetting
-                            industry.
-                        </p>
-                    </div>
+                    {renderHeadlines}
                 </div>
             </div>
             <div id="scontainer1">{renderNews}</div>
