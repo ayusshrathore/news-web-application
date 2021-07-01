@@ -133,9 +133,10 @@ body {
     height: 10vh;
     color: white;
     background-color: #263238;
+    bottom: 0;
 }
 #footer p {
-    padding-top: 2%;
+    padding-top: 1.5%;
 }
 #footer p a {
     text-decoration: none;
