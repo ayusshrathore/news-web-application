@@ -4,32 +4,41 @@ import "../css/general.css";
 
 const General = () => {
     const [news, setNews] = useState([]);
+    const fetchNews = async () => {
+        await Axios.get("http://localhost:8080/general")
+            .then(({ data }) => {
+                console.info(data);
+                setNews(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
     useEffect(() => {
-        const fetchNews = async () => {
-            await Axios.get("http://localhost:8080/general")
-                .then(({ data }) => {
-                    console.info(data);
-                    setNews(data[2]);
-                    console.log(news);
-                })
-                .catch((error) => {
-                    console.error(error);
-                });
-        };
         fetchNews();
     }, []);
+    const renderNews = news.map((article, index) => {
+        return (
+            <div id="scontainer1-news" key={index}>
+                <img src={article.image} alt={"news"} /> <br />
+                <p>{article.description}</p>
+            </div>
+        );
+    });
+    const article = news[0];
+    console.log(article);
     return (
         <>
             <h1 id="sh1">General</h1>
             <br />
             <div id="scontainer">
                 <div id="smaincard">
-                    <img src={news.image} alt="close" />
+                    {/* <img src={article.image} alt="close" />
                     <p>
-                        {news.title}
+                        {article.title}
                         <br />
                     </p>
-                    <a href={news.url}>Read More</a>
+                    <a href={news.url}>Read More</a> */}
                 </div>
                 <div id="sheadlines">
                     <h2 id="sh2">Headlines</h2>
@@ -59,20 +68,7 @@ const General = () => {
                     </div>
                 </div>
             </div>
-            <div id="scontainer1">
-                <div id="scontainer1-news">
-                    <img src={news.image} /> <br />
-                    <p>{news.description}</p>
-                </div>
-                <div id="scontainer1-news">
-                    <img src={news.image} /> <br />
-                    <p>{news.description}</p>
-                </div>
-                <div id="scontainer1-news">
-                    <img src={news.image} /> <br />
-                    <p>{news.description}</p>
-                </div>
-            </div>
+            <div id="scontainer1">{renderNews}</div>
         </>
     );
 };
