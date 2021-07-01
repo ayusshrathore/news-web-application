@@ -61,17 +61,17 @@ hr {
 #sheadlines-news {
     height: 10vh;
     width: 30vw;
-    margin: 2vh auto auto auto;
+    margin: 1% auto auto auto;
 }
 
 #sheadlines-news p {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 600;
     color: black;
 }
 
 #sh2 {
-    margin: 3vh auto auto 5vw;
+    margin: 5% auto auto 11%;
     font-size: 30px;
     font-weight: 1000;
     color: black;
@@ -90,7 +90,7 @@ hr {
     grid-column-gap: 20px;
     height: 70vh;
     width: 25vw;
-    background-color: #fafafa;
+    background-color: #3f51b5;
     margin: 5vh auto auto 3vw;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -102,5 +102,6 @@ hr {
 }
 #scontainer1-news p {
     margin: 0 2% 0 2%;
-    color: black;
+    color: white;
+    font-weight: 600;
 }
