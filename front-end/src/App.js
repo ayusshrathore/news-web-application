@@ -6,7 +6,6 @@ import {
   Redirect,
   useHistory,
 } from "react-router-dom";
-import { useEffect } from "react";
 import Home from "./components/Home";
 import General from "./components/General";
 import Politics from "./components/Politics";
