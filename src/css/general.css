@@ -148,7 +148,7 @@ hr {
 
     #smaincard p {
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 600;
         color: black;
         text-align: center;
         padding: auto;
@@ -201,11 +201,6 @@ hr {
     #sh1 {
         font-size: 30px;
         margin-top: 5%;
-        width: 18.5vh;
+        width: 17vh;
     }
-}
-#sh1 {
-    font-size: 30px;
-    margin-top: 5%;
-    width: 17vh;
 }
