@@ -19,7 +19,10 @@ const Politics = () => {
     useEffect(() => {
         fetchNews();
     }, []);
-    const renderNews = news.map((article, index) => {
+    const display = news.filter((article, index) => {
+        return index <= 27;
+    });
+    const renderNews = display.map((article, index) => {
         return (
             <div id="scontainer1-news" key={index}>
                 <img src={article.image} alt={"news"} /> <br />
