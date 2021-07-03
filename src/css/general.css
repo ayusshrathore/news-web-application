@@ -118,9 +118,7 @@ hr {
     padding: 0 2% 0 4%;
     color: black;
     font-weight: 600;
-<<<<<<< HEAD
 }
-
 @media (max-width: 725px) {
     #scontainer {
         display: grid;
@@ -205,12 +203,9 @@ hr {
         margin-top: 5%;
         width: 18.5vh;
     }
-=======
-  }
-  #sh1 {
+}
+#sh1 {
     font-size: 30px;
     margin-top: 5%;
     width: 17vh;
-  }
->>>>>>> 21545c4ce1766f4c542da434d4d295b28c826034
 }
