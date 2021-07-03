@@ -40,7 +40,7 @@ hr {
 
 #smaincard p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     color: black;
     text-align: center;
     padding: 0 2% 0 3%;
@@ -192,7 +192,7 @@ hr {
     }
     #scontainer1-news p {
         margin: 1% 0 0 0;
-        font-size: 10px;
+        font-size: 11px;
         padding: auto;
         color: black;
         font-weight: 600;
