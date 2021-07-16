@@ -23,11 +23,14 @@ const General = () => {
         return index <= 27;
     });
     const renderNews = display.map((article, index) => {
+        // const url = article.url;
         return (
-            <div id="scontainer1-news" key={index}>
-                <img src={article.image} alt={"news"} /> <br />
-                <p>{article.title}</p>
-            </div>
+            <>
+                <div id="scontainer1-news" key={index}>
+                    <img src={article.image} alt={"news"} /> <br />
+                    <p>{article.title}</p>
+                </div>
+            </>
         );
     });
     const main = news.filter((article, index) => {
@@ -41,7 +44,6 @@ const General = () => {
                     {article.title}
                     <br />
                 </p>
-                {/* <a href={article.url}>Read More</a> */}
             </div>
         );
     });
@@ -66,7 +68,14 @@ const General = () => {
                     {renderHeadlines}
                 </div>
             </div>
-            <div id="scontainer1">{renderNews}</div>
+            <div
+                id="scontainer1"
+                onClick={() => {
+                    window.location.href = renderNews.url;
+                }}
+            >
+                {renderNews}
+            </div>
         </>
     );
 };
