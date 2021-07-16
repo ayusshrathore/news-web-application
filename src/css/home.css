@@ -1,147 +1,123 @@
-@font-face {
-    font-family: OldEnglish;
-    src: url("./OldEnglish.ttf");
-}
 * {
-    font-family: Montserrat;
-    color: white;
+    font-family: "Montserrat";
+    color: #0b0b0b;
 }
 html,
 body {
     position: relative;
     height: 100%;
     margin: auto;
-    background-color: #4751ac;
+    background-color: #ffffff;
 }
 #root {
     height: 100%;
     margin: auto;
 }
 
-/* Navbar container */
-.navbar {
-    text-align: center;
-    padding: 0 1% 1% 1%;
-    line-height: 0.5vh;
-    margin: 0;
-    font-weight: 500;
-    width: 95%;
+li {
+    list-style: none;
 }
-#navbar-items {
-    display: grid;
-    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-    margin: 0 0 0 25%;
+
+a {
+    text-decoration: none;
 }
-#navbar-items div {
-    font-weight: 600;
-    color: white;
+
+#header {
+    color: black;
 }
-#navbar-items div:hover {
-    cursor: pointer;
-}
+
 .container {
-    margin: 3% 0 0 0;
+    margin: 1% 0 1% 0;
     display: flex;
-    height: 90vh;
-    width: 95%;
+    height: 70vh;
+    width: 100%;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
 }
 #item1 {
     font-size: 20px;
-    height: 90vh;
-    width: 60vw;
+    height: 70vh;
+    width: 55vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
 }
-#item2 {
-    font-size: 20px;
-    height: 90vh;
-    width: 40vw;
-    margin-top: 1%;
-}
-#item2 > h1 {
-    margin: 2% 0 0 0;
-    font-weight: 600;
-    text-align: center;
-}
-#item2 > p {
-    text-align: center;
-    font-weight: 600;
-}
+
 #item1 img {
+    width: 45vw;
+    height: 72vh;
+    margin: 0 0 0 13%;
+    border-radius: 8px;
+}
+
+#item2 {
+    height: 70vh;
     width: 40vw;
-    height: 75vh;
-    margin: 0 0 0 15%;
-    border-radius: 8px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.carousel {
-    text-align: center;
-    font-weight: 600;
-    width: 80%;
-    height: 50%;
-    margin: 10% 0 0 10%;
-    border-radius: 8px;
+#item2 > h1 {
+    /* font-family: "Helvetica Neue"; */
+    margin: 8% 0 5% 20%;
+    font-weight: 1000;
+    text-align: left;
+    font-size: 4rem;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+#item2 > p {
+    text-align: left;
+    font-weight: 700;
+    margin-left: 20%;
+    font-size: 1.5rem;
+    color: #673ab7;
 }
 
-.swiper-slide {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    border-radius: 8px;
+#btn {
+    display: flex;
+    height: 3rem;
+    width: 16vw;
+    border-radius: 15px;
+    margin-left: 20%;
+    font-size: 1.5rem;
+    background-image: linear-gradient(
+        to right,
+        #4776e6 0%,
+        #8e54e9 51%,
+        #4776e6 100%
+    );
+    padding-top: 1rem;
+    padding-left: 2rem;
+    margin-top: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    background-size: 200% auto;
 }
 
-.swiper-slide img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-}
-#title {
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
+#btn span {
     color: white;
-    font-weight: 600;
-    font-size: 15px;
-    width: 100%;
-    padding: 2% 0 2% 0;
-    border-radius: 0 0 8px 8px;
+    font-size: 2.5rem;
+    height: 0;
+    margin: -7% 20% 0 0;
 }
-#header {
-    font-size: 5vh;
+#btn:hover {
+    cursor: pointer;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
-#header img {
-    height: 5vh;
-    width: 3vw;
-    margin: 1% 0 0 20%;
-}
-#header p {
-    display: inline;
-    font-weight: 500;
-    font-family: OldEnglish;
-}
-#header span {
-    float: left;
-    font-size: 2.5vh;
-    margin: 2% 0 0 5%;
-    font-weight: 600;
-}
+
 #footer {
     text-align: center;
     height: 10vh;
     width: 100%;
+    margin-top: 1.2rem;
     color: white;
     background-color: #263238;
     bottom: 0;
+    overflow-y: hidden;
 }
 #footer p {
-    padding-top: 1.5%;
+    padding: 0.5%;
+    color: #ffffff;
 }
 #footer p a {
     text-decoration: none;
@@ -153,126 +129,236 @@ body {
     color: white;
 }
 
+#footer p a i {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin-left: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 12vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    margin-left: 5rem;
+    margin-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.7px;
+    border-radius: 1rem;
+    bottom: 0;
+    left: 0;
+    margin-top: 2rem;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0b0b0b;
+}
+
+.nav-logo {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #0b0b0b;
+    margin: 0 auto 0 7vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
 @media (max-width: 725px) {
     .container {
         display: grid;
         grid-template-columns: 1;
         row-gap: 2vh;
-        height: 98%;
+        height: 80vh;
         width: 90vw;
-        margin: auto;
+        margin: auto auto 0 auto;
+        overflow-y: hidden;
     }
 
     #item1 {
-        margin: 7% auto 3% auto;
+        margin: 10% auto 0 auto;
         height: 35vh;
         width: 90vw;
     }
 
     #item2 {
-        font-size: 20px;
-        height: 55vh;
+        height: 35vh;
         width: 90vw;
-        margin-top: 1%;
+        margin: 0 auto 5% auto;
     }
 
     #item2 > h1 {
-        margin: 2% auto 0 auto;
+        margin: 2.5rem auto 2rem auto;
         font-weight: 600;
+        font-size: 2.5rem;
         text-align: center;
     }
 
     #item2 > p {
         text-align: center;
         font-weight: 600;
-    }
-
-    #item1 img {
-        height: 35vh;
-        width: 70vw;
-        margin: 0 0 0 11%;
-    }
-
-    .carousel {
-        text-align: center;
-        font-weight: 600;
-        width: 70vw;
-        height: 30vh;
-        margin: 5% auto auto auto;
-        border-radius: 8px;
-    }
-
-    #title {
-        position: absolute;
-        bottom: 0;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.8);
-        color: whitesmoke;
-        font-weight: 500;
-        font-size: 13px;
-        padding: 1%;
-        border-radius: 0 0 8px 8px;
-    }
-
-    #title a {
-        padding-top: 1%;
-    }
-
-    #navbar-items div span {
-        display: none;
-    }
-
-    #navbar-items {
-        display: grid;
-        grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
-        margin: 0 0 0 12%;
-    }
-    #navbar-items i {
-        font-size: larger;
-    }
-
-    #footer {
-        height: 7vh;
-        bottom: 0;
-    }
-
-    #footer p {
-        margin-top: 4vh;
-        padding-top: 4%;
-        font-size: 13px;
-    }
-
-    #header span {
-        display: block;
-        width: 100%;
-        font-size: 15px;
-        margin-bottom: 5%;
-    }
-
-    #header p {
-        font-size: 25px;
+        font-size: 20px;
         margin: auto;
     }
 
-    #header img {
-        margin-left: 12%;
-        width: 10vw;
+    #btn {
+        height: 5vh;
+        width: 40vw;
+        font-size: 1rem;
+        margin: 12% auto auto auto;
+    }
+
+    #btn span {
+        font-size: 2rem;
+        margin: -10% 20% 0 0;
+    }
+
+    #item1 img {
+        height: 30vh;
+        width: 80vw;
+        margin: 0 0 0 7%;
+    }
+
+    #footer {
+        bottom: 0;
+        overflow-y: hidden;
+    }
+
+    #footer p {
+        margin: 3vh auto 2vh auto;
+        font-size: 15px;
     }
 
     html,
     body {
         position: relative;
-        height: 100%;
         max-width: 100vw;
         margin: 0;
-        background-color: #4751ac;
         overflow-x: hidden;
     }
 
     #root {
-        height: 100%;
         max-width: 100vw;
-        margin: 0;
+        margin: auto;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        left: -100%;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        padding: 10rem;
+        background-color: black;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        position: relative;
+        margin: 1rem 0;
+        color: whitesmoke;
+    }
+
+    .nav-item:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        margin-top: 2rem;
+        background-color: whitesmoke;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        font-weight: 300;
+        color: whitesmoke;
+    }
+
+    .nav-logo {
+        margin: auto;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: whitesmoke;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: whitesmoke;
     }
 }
 
