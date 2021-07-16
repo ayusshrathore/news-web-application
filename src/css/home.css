@@ -217,7 +217,7 @@ a {
         row-gap: 2vh;
         height: 80vh;
         width: 90vw;
-        margin: auto auto 0 auto;
+        margin: auto auto 5% auto;
         overflow-y: hidden;
     }
 
@@ -268,6 +268,7 @@ a {
     #footer {
         bottom: 0;
         overflow-y: hidden;
+        height: 12vh;
     }
 
     #footer p {
