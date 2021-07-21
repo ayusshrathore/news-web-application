@@ -96,7 +96,7 @@ a {
     color: white;
     font-size: 2.5rem;
     height: 0;
-    margin: -5% 20% 0 0;
+    margin: -7% 20% 0 0;
 }
 #btn:hover {
     cursor: pointer;
@@ -259,7 +259,7 @@ a {
 
     #btn span {
         font-size: 1.5rem;
-        margin: -4% 20% 0 0;
+        margin: -6% 20% 0 0;
     }
 
     #item1 img {
