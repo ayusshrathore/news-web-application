@@ -11,12 +11,14 @@ import General from "./components/General";
 import Politics from "./components/Politics";
 import Business from "./components/Business";
 import Sports from "./components/Sports";
+import { useState } from "react";
 
 const App = () => {
     const history = useHistory();
     const refresh = () => {
         window.location.reload(false);
     };
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
@@ -31,7 +33,9 @@ const App = () => {
                     >
                         The Post
                     </div>
-                    <ul className="nav-menu">
+                    <ul
+                        className={`${isOpen ? "nav-menu-active" : "nav-menu"}`}
+                    >
                         <li className="nav-item">
                             <div
                                 className="nav-link"
@@ -77,7 +81,14 @@ const App = () => {
                             </div>
                         </li>
                     </ul>
-                    <div className="hamburger">
+                    <div
+                        className={`${
+                            isOpen ? "hamburger-active" : "hamburger"
+                        }`}
+                        onClick={() => {
+                            setIsOpen(!isOpen);
+                        }}
+                    >
                         <span className="bar"></span>
                         <span className="bar"></span>
                         <span className="bar"></span>
