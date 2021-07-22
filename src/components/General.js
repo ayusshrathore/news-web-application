@@ -9,7 +9,7 @@ const General = () => {
     const fetchNews = async () => {
         await Axios.get(url)
             .then((response) => {
-                console.info(response.data.news);
+                // console.info(response.data.news);
                 setNews(response.data.news);
             })
             .catch((error) => {
@@ -23,10 +23,16 @@ const General = () => {
         return index <= 27;
     });
     const renderNews = display.map((article, index) => {
-        // const url = article.url;
+        const url = article.url;
         return (
             <>
-                <div id="scontainer1-news" key={index}>
+                <div
+                    id="scontainer1-news"
+                    key={index}
+                    onClick={() => {
+                        window.location.href = url;
+                    }}
+                >
                     <img src={article.image} alt={"news"} /> <br />
                     <p>{article.title}</p>
                 </div>
@@ -37,8 +43,15 @@ const General = () => {
         return index === 0;
     });
     const renderMain = main.map((article, index) => {
+        const url = article.url;
         return (
-            <div id="smaincard" key={index}>
+            <div
+                id="smaincard"
+                key={index}
+                onClick={() => {
+                    window.location.href = url;
+                }}
+            >
                 <img src={article.image} alt="close" />
                 <p>
                     {article.title}
@@ -51,8 +64,15 @@ const General = () => {
         return index <= 2;
     });
     const renderHeadlines = headlines.map((article, index) => {
+        const url = article.url;
         return (
-            <div id="sheadlines-news" key={index}>
+            <div
+                id="sheadlines-news"
+                key={index}
+                onClick={() => {
+                    window.location.href = url;
+                }}
+            >
                 <p> {article.title}</p>
             </div>
         );
@@ -68,14 +88,7 @@ const General = () => {
                     {renderHeadlines}
                 </div>
             </div>
-            <div
-                id="scontainer1"
-                onClick={() => {
-                    window.location.href = renderNews.url;
-                }}
-            >
-                {renderNews}
-            </div>
+            <div id="scontainer1">{renderNews}</div>
         </>
     );
 };

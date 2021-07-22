@@ -23,35 +23,56 @@ const Sports = () => {
         return index <= 27;
     });
     const renderNews = display.map((article, index) => {
+        const url = article.url;
         return (
-            <div id="scontainer1-news" key={index}>
-                <img src={article.image} alt={"news"} /> <br />
-                <p>{article.title}</p>
-            </div>
+            <>
+                <div
+                    id="scontainer1-news"
+                    key={index}
+                    onClick={() => {
+                        window.location.href = url;
+                    }}
+                >
+                    <img src={article.image} alt={"news"} /> <br />
+                    <p>{article.title}</p>
+                </div>
+            </>
         );
     });
     const main = news.filter((article, index) => {
         return index === 0;
     });
     const renderMain = main.map((article, index) => {
+        const url = article.url;
         return (
-            <div id="smaincard" key={index}>
+            <div
+                id="smaincard"
+                key={index}
+                onClick={() => {
+                    window.location.href = url;
+                }}
+            >
                 <img src={article.image} alt="close" />
                 <p>
                     {article.title}
                     <br />
                 </p>
-                {/* <a href={article.url}>Read More</a> */}
             </div>
         );
     });
     const headlines = news.filter((article, index) => {
         return index <= 2;
     });
-    console.log(headlines);
     const renderHeadlines = headlines.map((article, index) => {
+        const url = article.url;
         return (
-            <div id="sheadlines-news" key={index}>
+            <div
+                id="sheadlines-news"
+                key={index}
+                onClick={() => {
+                    window.location.href = url;
+                }}
+            >
                 <p> {article.title}</p>
             </div>
         );
