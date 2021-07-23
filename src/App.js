@@ -24,7 +24,7 @@ const App = () => {
         <>
             <div id="header">
                 <div className="navbar">
-                    <button
+                    <div
                         className="nav-logo"
                         onClick={() => {
                             history.push("/");
@@ -32,12 +32,12 @@ const App = () => {
                         }}
                     >
                         The Post
-                    </button>
+                    </div>
                     <ul
                         className={`${isOpen ? "nav-menu-active" : "nav-menu"}`}
                     >
                         <li className="nav-item">
-                            <button
+                            <div
                                 className="nav-link"
                                 onClick={() => {
                                     history.push("/general");
@@ -45,10 +45,10 @@ const App = () => {
                                 }}
                             >
                                 General
-                            </button>
+                            </div>
                         </li>
                         <li className="nav-item">
-                            <button
+                            <div
                                 className="nav-link"
                                 onClick={() => {
                                     history.push("/politics");
@@ -56,10 +56,10 @@ const App = () => {
                                 }}
                             >
                                 Politics
-                            </button>
+                            </div>
                         </li>
                         <li className="nav-item">
-                            <button
+                            <div
                                 className="nav-link"
                                 onClick={() => {
                                     history.push("/sports");
@@ -67,10 +67,10 @@ const App = () => {
                                 }}
                             >
                                 Sports
-                            </button>
+                            </div>
                         </li>
                         <li className="nav-item">
-                            <button
+                            <div
                                 className="nav-link"
                                 onClick={() => {
                                     history.push("/business");
@@ -78,7 +78,7 @@ const App = () => {
                                 }}
                             >
                                 Business
-                            </button>
+                            </div>
                         </li>
                     </ul>
                     <div
