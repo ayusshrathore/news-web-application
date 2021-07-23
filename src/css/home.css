@@ -217,6 +217,7 @@ a {
 .nav-logo:hover {
   cursor: pointer;
 }
+
 @media (max-width: 725px) {
   .container {
     display: grid;
@@ -316,16 +317,16 @@ a {
     height: 110vh;
     bottom: 0;
     top: -5%;
-    padding-top: 5rem;
+    padding-top: 7rem;
     background-color: black;
     text-align: center;
     animation: slideIn 0.5s forwards;
   }
   @keyframes slideIn {
-    0% {
-      transform: translateX(-500px);
+    from {
+      transform: translateX(500px);
     }
-    100% {
+    to {
       transform: translateX(-10px);
     }
   }
@@ -334,6 +335,7 @@ a {
     position: relative;
     margin: 5rem 10rem auto 6rem;
     color: whitesmoke;
+    animation: none;
   }
 
   .nav-link {
@@ -346,6 +348,7 @@ a {
 
   .nav-logo {
     margin: 1rem auto 0.5rem 1rem;
+    animation: none;
   }
   .hamburger {
     display: block;
