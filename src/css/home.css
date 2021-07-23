@@ -218,18 +218,18 @@ a {
         row-gap: 2vh;
         height: 80vh;
         width: 90vw;
-        margin: auto auto 5% auto;
+        margin: auto auto 0 auto;
         overflow-y: hidden;
     }
 
     #item1 {
-        margin: 10% auto 0 auto;
-        height: 35vh;
+        margin: 0 auto 0 auto;
+        height: 30vh;
         width: 90vw;
     }
 
     #item2 {
-        height: 35vh;
+        height: 40vh;
         width: 90vw;
         margin: 0 auto 5% auto;
     }
