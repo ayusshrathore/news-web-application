@@ -26,7 +26,10 @@ const Home = () => {
               refresh();
             }}
           >
-            Read More &nbsp;&nbsp;<span>&#8594;</span>
+            <span id="btn-txt">
+              Read More &nbsp;&nbsp;
+              <i className="fas fa-chevron-circle-right"></i>
+            </span>{" "}
           </div>
         </div>
         <div id="item1">
