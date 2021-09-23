@@ -1,229 +1,230 @@
 hr {
-    line-height: 2vh;
-    color: #0b0b0b;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  line-height: 2vh;
+  color: #0b0b0b;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 #sh1 {
-    font-size: 40px;
-    width: 10.5vw;
-    color: #0b0b0b;
-    margin: 2% 0 0 10%;
-    padding-bottom: 0.5%;
-    border-bottom: 2px solid white;
+  font-size: 40px;
+  width: 10.5vw;
+  color: #0b0b0b;
+  margin: 2% 0 0 10%;
+  padding-bottom: 0.5%;
+  border-bottom: 2px solid white;
 }
 
 #scontainer {
-    display: flex;
-    height: 60vh;
-    width: 80vw;
-    background-color: white;
-    margin: 0 auto auto auto;
-    border-radius: 6px;
+  display: flex;
+  height: fit-content;
+  width: 80vw;
+  background-color: white;
+  margin: 0 auto auto auto;
+  border-radius: 6px;
 }
 #smaincard {
-    display: block;
-    height: 60vh;
-    width: 40vw;
-    background-color: #eceff1;
-    margin-top: 0;
-    border-radius: 8px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: block;
+  height: fit-content;
+  width: 40vw;
+  background-color: #eceff1;
+  margin-top: 0;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 #smaincard img {
-    height: 40vh;
-    width: 40vw;
-    margin: 0 auto auto 0;
-    border-radius: 8px 8px 0 0;
+  height: 40vh;
+  width: 40vw;
+  margin: 0 auto auto 0;
+  border-radius: 8px 8px 0 0;
 }
 
 #smaincard p {
-    font-size: 20px;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    padding: 0 2% 0 3%;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  padding: 2% 4%;
 }
 
 #smaincard a {
-    font-size: 20px;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    margin: 0 auto auto 16.5vw;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin: 0 auto auto 16.5vw;
 }
 #smaincard:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 #sheadlines {
-    display: block;
-    height: 60vh;
-    width: 38vw;
-    background-color: white;
-    color: black;
-    margin-top: 0;
-    margin-left: 8%;
-    border-radius: 8px;
+  display: block;
+  height: 60vh;
+  width: 38vw;
+  background-color: white;
+  color: black;
+  margin-top: 0;
+  margin-left: 8%;
+  border-radius: 8px;
 }
 
 #sheadlines a {
-    font-weight: 500;
-    color: black;
-    margin-left: 5%;
+  font-weight: 500;
+  color: black;
+  margin-left: 5%;
 }
 
 #sheadlines-news {
-    /* height: 10vh; */
-    width: 25vw;
-    padding: 0 2% 2% 0;
-    /* padding-bottom: 2%; */
-    margin: 3% auto 5% auto;
-    border-bottom: #263238 2px solid;
+  /* height: 10vh; */
+  width: 25vw;
+  padding: 0 2% 2% 0;
+  /* padding-bottom: 2%; */
+  margin: 3% auto 5% auto;
+  border-bottom: #263238 2px solid;
 }
 
 #sheadlines-news p {
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
 }
 
 #sheadlines-news:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #sh2 {
-    margin: auto auto 8% 11%;
-    font-size: 35px;
-    font-weight: 1000;
-    color: black;
+  margin: auto auto 8% 11%;
+  font-size: 35px;
+  font-weight: 1000;
+  color: black;
 }
 
 #scontainer1 {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 2vh;
-    column-gap: 6vh;
-    width: 80vw;
-    margin: 5vh auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 2vh;
+  column-gap: 6vh;
+  width: 80vw;
+  margin: 2.5vh auto 2.5vh auto;
 }
 
 #scontainer1-news {
-    height: 45vh;
-    width: 18vw;
-    background-color: white;
-    margin: 5vh auto auto 0;
-    border-radius: 10px;
-    border: 2.5px solid #90a4ae;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 40vh;
+  width: 18vw;
+  background-color: white;
+  margin: 5vh auto auto 0;
+  border-radius: 10px;
+  /* border: 2px groove #0a0a0a; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 #scontainer1-news img {
-    display: block;
-    width: 18vw;
-    border-radius: 7px 7px 0 0;
+  display: block;
+  width: 18vw;
+  height: 50%;
+  border-radius: 7px 7px 0 0;
 }
 #scontainer1-news p {
-    margin: 1% 0 0 0;
-    padding: 0 2% 0 4%;
-    color: black;
-    font-weight: 600;
+  margin: 1% 0 0 0;
+  padding: 0 2% 0 4%;
+  color: black;
+  font-weight: 600;
 }
 #scontainer1-news:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 725px) {
-    #scontainer {
-        display: grid;
-        grid-template-columns: 1;
-        row-gap: 3%;
-        width: 80vw;
-        height: 50vh;
-        background-color: white;
-        margin: 0 auto auto auto;
-        border-radius: 6px;
-    }
-    #smaincard {
-        display: block;
-        height: 50vh;
-        width: 80vw;
-        margin-top: 0;
-        border-radius: 6px;
-    }
+  #scontainer {
+    display: grid;
+    grid-template-columns: 1;
+    row-gap: 3%;
+    width: 80vw;
+    height: 50vh;
+    background-color: white;
+    margin: 0 auto auto auto;
+    border-radius: 6px;
+  }
+  #smaincard {
+    display: block;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 0;
+    border-radius: 6px;
+  }
 
-    #smaincard img {
-        height: 30vh;
-        width: 80vw;
-        margin: auto;
-        border-radius: 6px 6px 0 0;
-    }
+  #smaincard img {
+    height: 30vh;
+    width: 80vw;
+    margin: auto;
+    border-radius: 6px 6px 0 0;
+  }
 
-    #smaincard p {
-        font-size: 15px;
-        font-weight: 600;
-        color: black;
-        text-align: center;
-        padding: auto;
-    }
+  #smaincard p {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding: auto;
+  }
 
-    #smaincard a {
-        font-size: 15px;
-        font-weight: 300;
-        color: black;
-        text-align: center;
-        margin: 0 auto auto 35%;
-    }
+  #smaincard a {
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin: 0 auto auto 35%;
+  }
 
-    #smaincard:hover {
-        cursor: pointer;
-    }
+  #smaincard:hover {
+    cursor: pointer;
+  }
 
-    #sheadlines {
-        display: none;
-        height: 45vh;
-        width: 90vw;
-        background-color: white;
-        margin: 0 auto auto auto;
-        border-radius: 5px;
-    }
-    #scontainer1 {
-        display: grid;
-        grid-template-columns: auto;
-        width: 80vw;
-        margin: 8vh auto auto auto;
-    }
-    #scontainer1-news {
-        display: inline-flex;
-        height: 15vh;
-        width: 85vw;
-        background-color: white;
-        margin: auto;
-        border: none;
-        border-radius: 0px;
-        box-shadow: none;
-        border-bottom: 1px solid black;
-    }
-    #scontainer1-news img {
-        width: 25vw;
-        height: 80%;
-        border-radius: 5px 0 0 5px;
-    }
-    #scontainer1-news p {
-        margin: 0;
-        font-size: 15px;
-        padding: auto;
-        color: black;
-        font-weight: 600;
-    }
-    #scontainer1-news:hover {
-        cursor: pointer;
-    }
-    #sh1 {
-        font-size: 30px;
-        margin-top: 5%;
-        width: 17vh;
-    }
-    hr {
-        background-color: black;
-    }
+  #sheadlines {
+    display: none;
+    height: 45vh;
+    width: 90vw;
+    background-color: white;
+    margin: 0 auto auto auto;
+    border-radius: 5px;
+  }
+  #scontainer1 {
+    display: grid;
+    grid-template-columns: auto;
+    width: 80vw;
+    margin: 8vh auto auto auto;
+  }
+  #scontainer1-news {
+    display: inline-flex;
+    height: 15vh;
+    width: 85vw;
+    background-color: white;
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+  }
+  #scontainer1-news img {
+    width: 25vw;
+    height: 80%;
+    border-radius: 5px 0 0 5px;
+  }
+  #scontainer1-news p {
+    margin: 0;
+    font-size: 15px;
+    padding: auto;
+    color: black;
+    font-weight: 600;
+  }
+  #scontainer1-news:hover {
+    cursor: pointer;
+  }
+  #sh1 {
+    font-size: 30px;
+    margin-top: 5%;
+    width: 17vh;
+  }
+  hr {
+    background-color: black;
+  }
 }
