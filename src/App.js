@@ -31,7 +31,7 @@ const App = () => {
                             refresh();
                         }}
                     >
-                        The Post
+                        The Morning Tribute
                     </div>
                     <ul
                         className={`${isOpen ? "nav-menu-active" : "nav-menu"}`}
