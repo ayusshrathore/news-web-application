@@ -1,15 +1,14 @@
-FROM node:16.13.1-alpine3.14
-
+# Build Stage
+FROM node:16.13.1-alpine3.14 AS build
 WORKDIR /app
-
 COPY package*.json ./
-
 RUN npm install
-
 COPY . .
-EXPOSE 3000
+RUN npm run build
 
-RUN export NODE_OPTIONS=--openssl-legacy-provider
-
-CMD ["npm", "start"]
+# Production Stage
+FROM nginx:1.20.2-alpine AS production
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
