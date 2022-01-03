@@ -1,6 +1,6 @@
 # News Web Application
 
-A news web application which fetches the news from the `Currents API` and displays it.
+A news web application that fetches news around the globe and displays it.
 
 ## Acknowledgements
 
