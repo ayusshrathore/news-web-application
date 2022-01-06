@@ -85,7 +85,7 @@ const Sports = () => {
 		<Loading visible={loading} />
 	) : (
 		<>
-			<h1 id="sh1">General</h1>
+			<h1 id="sh1">Sports</h1>
 			<br />
 			<div id="scontainer">
 				{renderMain}
