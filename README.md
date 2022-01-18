@@ -17,7 +17,12 @@ News from various sectors ~
 
 ## Screenshots
 
-![App Screenshot](https://github.com/ayush-rathore/news-web-application/raw/main/screenshots/home.png)
+<a href="https://tmt.vercel.app/">
+  <img
+    alt="App Screenshot"
+    src="https://github.com/ayush-rathore/news-web-application/raw/main/screenshots/home.png"
+  />
+</a>
 
 ## Run Locally
 
