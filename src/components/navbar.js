@@ -16,7 +16,7 @@ const Navbar = (props) => {
 						<Link
 							to="/general"
 							className="nav-link"
-							onClick={setIsOpen(!isOpen)}
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							General
 						</Link>
@@ -25,7 +25,7 @@ const Navbar = (props) => {
 						<Link
 							to="/politics"
 							className="nav-link"
-							onClick={setIsOpen(!isOpen)}
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							Politics
 						</Link>
@@ -34,7 +34,7 @@ const Navbar = (props) => {
 						<Link
 							to="/sports"
 							className="nav-link"
-							onClick={setIsOpen(!isOpen)}
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							Sports
 						</Link>
@@ -43,7 +43,7 @@ const Navbar = (props) => {
 						<Link
 							to="/business"
 							className="nav-link"
-							onClick={setIsOpen(!isOpen)}
+							onClick={() => setIsOpen(!isOpen)}
 						>
 							Business
 						</Link>
