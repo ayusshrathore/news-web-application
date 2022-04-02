@@ -2,17 +2,15 @@ import React from "react";
 import "../css/home.css";
 import body from "./images/news.jpg";
 import { useHistory } from "react-router";
-import Navbar from "./navbar";
-import Footer from "./footer";
 
 const Home = () => {
 	const history = useHistory();
 	const refresh = () => {
 		window.location.reload(false);
 	};
+
 	return (
 		<>
-			<Navbar />
 			<div className="container">
 				<div id="item2">
 					<h1>
@@ -39,7 +37,6 @@ const Home = () => {
 					<img src={body} alt={"body"} />
 				</div>
 			</div>
-			<Footer />
 		</>
 	);
 };

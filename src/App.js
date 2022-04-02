@@ -5,10 +5,13 @@ import General from "./components/General";
 import Politics from "./components/Politics";
 import Business from "./components/Business";
 import Sports from "./components/Sports";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 const App = () => {
 	return (
 		<>
+			<Navbar />
 			<Switch>
 				<Route path={"/general"} component={General} />
 				<Route path={"/politics"} component={Politics} />
@@ -17,6 +20,7 @@ const App = () => {
 				<Route path={"/"} component={Home} exact />
 				<Redirect to={"/"} />
 			</Switch>
+			<Footer />
 		</>
 	);
 };
